@@ -1,0 +1,117 @@
+/* body {
+    background-color: black;
+    color: white;
+} */
+
+#form-container {
+    margin: auto;
+    width: 50%; 
+}
+
+.heading{
+    font-size: larger;
+}
+
+.tables{
+    width: 200px;
+}
+
+.bfLabel {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+/* .table {
+    color: white;
+} */
+
+#theme1, #theme2 {
+    color: black;
+}
+
+#theme1 {
+    outline: -webkit-focus-ring-color auto 1px;
+}
+
+#theme1:active, #theme2:active {
+    background-color: gray;
+}
+
+.card{
+    width: 80%;
+    margin: 10% 100px 10% 100px;
+    height: 1450px;
+    border: 2px solid black;
+}
+
+.textcontent
+{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 70px;
+    margin-top: 50px;
+   
+   
+}
+
+.card-img-top{
+    width: 95%;
+    
+    margin: auto;
+}
+
+.women-img
+{
+    margin-bottom: 100px;
+}
+
+.date
+{
+    width: 88%;
+    margin: auto;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+#calorieresulttable
+{
+    margin-top: 60px;
+    width: 80%;
+    margin: auto;
+    
+}
+.res
+{
+    font-size: larger;
+    font-weight: bold;
+    border: 0px;
+    width: 90px;
+}
+.res1
+{
+    border: 0px;
+}
+.row
+{
+    height: 100px;
+    width: 350px;
+}
+table
+{
+    width: 60%;
+    margin: auto;
+}
+.BFformula-table
+{
+    border: 0px ;
+}
+
+td
+{
+    border: 2px solid black;
+}
+th
+{
+    font-size: larger;
+    font-weight: bold;
+}
