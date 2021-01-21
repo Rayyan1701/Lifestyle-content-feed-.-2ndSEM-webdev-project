@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calorie Calculator</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbarMain">
     <div class="container-fluid" style="height: 70px; margin-bottom: 10px; ">
-      <a class="navbar-brand" href="#" style="font-weight:normal; font-size:40px; margin-left: 20px;"> FitLife</a>
+      <a class="navbar-brand" href="../introduction.html" style="font-weight:normal; font-size:40px; margin-left: 20px;"> FitLife</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -19,28 +19,21 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-bottom: 0px; font-size: large; ">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Calculations
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="./index.html">Bodyfat
-                  percentage</a></li>
+              <li><a class="dropdown-item" href="./BodyFatCalculator.html">BodyFat Percentage</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="./caloriecalculator.html">Calories Calculator</a></li>
+              <li><a class="dropdown-item" href="./CalorieCalculator.html">Calories Calculator</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="./idealweightcalculator.html">Ideal weight Calculator</a></li>
+              <li><a class="dropdown-item" href="./IdealWeightCalculator.html">Ideal weight Calculator</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown ">
@@ -49,31 +42,28 @@
               Workout
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="MaleWorkoutRoutine.html">Male</a></li>
+              <li><a class="dropdown-item" href="../WorkoutRoutines/Male.html">Male</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="./FemaleWorkoutRoutine.html">Female</a></li>
+              <li><a class="dropdown-item" href="../WorkoutRoutines/Female.html">Female</a></li>
 
             </ul>
           </li>
         </ul>
         <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false" style="color: black;">
+          <a class="nav-link dropdown-toggle themeChangeDropdown" href="#" id="navbarDropdown" 
+          role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <span id="themeDropDown">Change Theme</span>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" id="theme1" href="#" onclick="lightMode()">Light Mode</a></li>
-            <li><a class="dropdown-item" id="theme2" href="#" onclick="darkMode()">Dark Mode</a></li>
+            <li><a class="dropdown-item lightMode" href="#" onclick="lightMode()">Light Mode</a></li>
+            <li><a class="dropdown-item darkMode" href="#" onclick="darkMode()">Dark Mode</a></li>
           </ul>
         </div>
-
       </div>
-
     </div>
-  </nav>
-  <br />
+  </nav><br/>
 
   <div class="container">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -84,7 +74,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item  active">
-          <img src="./IMAGES/navbar/calorie-img1.jfif" style="height: 600px; width: 80%;" class="d-block w-100"
+          <img src="./CalorieCalculatorImages/img1.jfif" style="height: 600px; width: 80%;" class="d-block w-100"
             alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5> “ Food is an important part of a balanced diet.” </h5>
@@ -92,7 +82,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./IMAGES/navbar/calorei-img2.jpg" style="height: 600px; width: 80%;" class="d-block w-100"
+          <img src="./CalorieCalculatorImages/img2.jpg" style="height: 600px; width: 80%;" class="d-block w-100"
             alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>“ Insanity: Doing the same thing over and over again and expecting different results.”</h5>
@@ -100,7 +90,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./IMAGES/navbar/calorie-img3.jpg" style="height: 600px;" style="height: 800px; width: 80%;"
+          <img src="./CalorieCalculatorImages/img3.jpg" style="height: 600px;" style="height: 800px; width: 80%;"
             class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>“You can have your cake and lose weight, too!”</h5>
@@ -151,11 +141,10 @@
         <label class="bfLabel">Age: </label> <br />
         <input type="number" class="form-control" id="age" />
       </div><br />
-      <div class="col-md" style="margin-bottom: 100px;">
-        <div class="form-floating">
-
-          <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-            <option value=0 selected>Activity Level!</option>
+      <div class="form-group">
+        <label class="bfLabel" id="activityLevel">Choose your Activity Level: </label>
+          <select class="form-control" id="floatingSelectGrid">
+            <option value=0><i>-------Select Level-------</i></option>
             <option value=1>Basic metabolic Rate</option>
             <option value=1.2>Little or no Exercise in a week</option>
             <option value=1.374>Light: exercise 1-3 times a week</option>
@@ -164,17 +153,15 @@
             <option value=1.725>Very Active: Intense exercise 6-7 times a week</option>
             <option value=1.9>Extra active: Very intense exercise daily</option>
           </select>
-          <label for="floatingSelectGrid">Choose your</label>
-        </div>
-      </div><br />
+      </div><br/>
 
       <div class="form-group" style="display: flex;">
         <button type="button" data-bs-toggle="popover" title="Popover title"
           data-bs-content="And here's some amazing content. It's very engaging. Right?"
-          class="btn btn-lg btn-danger btn-success" style="margin-left: auto;" onclick="calculatecalories();">Calculate
+          class="btn btn-success" style="margin-left: auto;" onclick="calculatecalories();">Calculate
           Maintainance calories</button>
         <span style="margin: 10px;"></span>
-        <button class="btn btn-danger" style="margin-right: auto;" onclick="resetcalorieValues();">Reset Values</button>
+        <button class="btn btn-danger" style="margin-right: auto;" onclick="reset();">Reset Values</button>
       </div>
     </div>
     <hr />
@@ -187,42 +174,42 @@
 
       <tbody>
         <tr>
-            <th class="row">
+            <th >
                 <h4>Maintainance calories</h4>
                 <h6>to maintain weight</h6>
             </th>
-            <td class="res" id="maintain"></td>
-            <td class="res1" >calories/day</td>
+            <td  id="maintain"></td>
+            <td  >calories/day</td>
         </tr>
         <tr>
-            <th class="row">
+            <th >
                 <h4>Mild weight loss</h4>
                 <h6>To lose 0.25 kg per week</h6>
             </th>
-            <td class="res" id="mildloss"></td>
-            <td class="res1" >calories/day</td>
+            <td  id="mildloss"></td>
+            <td  >calories/day</td>
         </tr>
         <tr>
-            <th class="row">
+            <th >
                 <h4>Weight loss</h4>
                 <h6>To lose 0.5 kg per week</h6>
             </th>
-            <td class="res" id="loss"></td>
-            <td class="res1" >calories/day</td>
+            <td  id="loss"></td>
+            <td  >calories/day</td>
         </tr>
         <tr>
-            <th class="row">
+            <th >
                 <h4>Extreme weight loss</h4>
                 <h6>To lose 1 kg per week</h6>
             </th>
-            <td class="res" id="extremeloss"></td>
-            <td class="res1" >calories/day</td>
+            <td  id="extremeloss"></td>
+            <td >calories/day</td>
         </tr>
     </tbody>
     </table>
 
     <br />
-
+    <div>
     <p class="textcontent">
       <br>
     <p >This Calorie Calculator is based on several equations, and the results of the calculator
@@ -463,7 +450,7 @@
       product in order to determine whether said food should have a place within your diet.</p>
 
 
-    <h2>Calories in Common Foods</h2>
+    <!-- <h2>Calories in Common Foods</h2>
     <table class="cinfoT ">
       <tr>
         <th class="cinfoHd">Food</th>
@@ -1045,21 +1032,15 @@
         <td class="cinfoBodL">283</td>
         <td class="cinfoBodL">68</td>
       </tr>
-    </table>
-
+    </table> -->
   </div>
-
   </p>
-
-
   </div>
-
-
-
-  <script src="./bodyFatCalc.js"></script>
+</div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
+    <script src="./CalorieCalculator.js"></script>
+    <script src="./themes/TcCc.js"></script>
 </body>
-
 </html>

@@ -2,87 +2,73 @@
 <html>
 
 <head>
-
-    <link rel="stylesheet" href="C:\Users\mehat\OneDrive\Documents\project WA\bodycalculator_stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Workout Plan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
-
-
-    <link rel="stylesheet" href="./style.css">
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbarMain">
         <div class="container-fluid" style="height: 70px; margin-bottom: 10px; ">
-            <a class="navbar-brand" href="#" style="font-weight:normal; font-size:40px; margin-left: 20px;"> FitLife</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent"
-                style="margin-bottom: 0px; font-size: large; ">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Calculations
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="./index.html">Bodyfat
-                                    percentage</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="./caloriecalculator.html">Calories Calculator</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="./idealweightcalculator.html">Ideal weight Calculator</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Workout
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="./MaleWorkoutRoutine.html">Male</a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="./FemaleWorkoutRoutine.html">Female</a></li>
-
-                        </ul>
-                    </li>
+          <a class="navbar-brand" href="../introduction.html" style="font-weight:normal; font-size:40px; margin-left: 20px;"> FitLife</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-bottom: 0px; font-size: large; ">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Calculations
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../Calculators/BodyFatCalculator.html">BodyFat Percentage</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="../Calculators/CalorieCalculator.html">Calories Calculator</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="../Calculators/IdealWeightCalculator.html">Ideal weight Calculator</a></li>
                 </ul>
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
-                        <span id="themeDropDown">Change Theme</span>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" id="theme1" href="#" onclick="lightMode()">Light Mode</a></li>
-                        <li><a class="dropdown-item" id="theme2" href="#" onclick="darkMode()">Dark Mode</a></li>
-                    </ul>
-                </div>
-
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Workout
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../WorkoutRoutines/Male.html">Male</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="../WorkoutRoutines/Female.html">Female</a></li>
+    
+                </ul>
+              </li>
+            </ul>
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle themeChangeDropdown" href="#" id="navbarDropdown" 
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span id="themeDropDown">Change Theme</span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item lightMode" href="#" onclick="lightMode()">Light Mode</a></li>
+                <li><a class="dropdown-item darkMode" href="#" onclick="darkMode()">Dark Mode</a></li>
+              </ul>
             </div>
-
+          </div>
         </div>
-    </nav>
+      </nav><br>
+
+      <div class="container">
     <div class="textcontent" style="margin-right: 100px;">
         <h1 style="text-align: center; margin-bottom: 40px;">The Ultimate Workout Routine for Men</h1>
 
@@ -191,7 +177,7 @@
 
     <div class="card col-lg-4 col-md-6 col-sm-12">
         <p style="font-weight: bold; font-size: 50px; margin: auto;">Workout 1</p>
-        <img src="./IMAGES/workoutroutine/push.jfif" class="card-img-top" alt="...">
+        <img src="./MaleImages/push.jfif" class="card-img-top" alt="...">
         <div class="card-body">
             <h3 class="card-title">Push day muscles</h3>
             <p class="card-text">In the “push” workout you train all the upper body pushing muscles, i.e. the chest,
@@ -222,7 +208,7 @@
 
     <div class="card col-lg-4 col-md-6 col-sm-12">
         <p style="font-weight: bold; font-size: 50px; margin: auto;">Workout 2</p>
-        <img src="./IMAGES/workoutroutine/pull.jfif" class="card-img-top" alt="...">
+        <img src="./MaleImages/pull.jfif" class="card-img-top" alt="...">
         <div class="card-body">
             <h3 class="card-title">Pull day muscles</h3>
             <p><span style="color: #444444; font-size: 12pt;">In the "pull" workout you train all the upper
@@ -256,7 +242,7 @@
 
     <div class="card col-lg-4 col-md-6 col-sm-12">
         <p style="font-weight: bold; font-size: 50px; margin: auto;">Workout 3</p>
-        <img src="./IMAGES/workoutroutine/leg.jfif" class="card-img-top" alt="...">
+        <img src="./MaleImages/leg.jfif" class="card-img-top" alt="...">
         <div class="card-body">
             <h3 class="card-title">Leg day muscles</h3>
             <p><span style="color: #444444; font-size: 12pt;">And in the "legs" workout you train the entire
@@ -382,8 +368,11 @@
             <li>Mountain climber</li>
         </ul>
     </div>
-
-    <script src="bodyFatCalc.js"></script>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+    <script src="../themeChange.js"></script>
 </body>
 
 </html>

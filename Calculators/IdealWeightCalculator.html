@@ -1,84 +1,71 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideal Weight Calculator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbarMain">
         <div class="container-fluid" style="height: 70px; margin-bottom: 10px; ">
-            <a class="navbar-brand" href="#" style="font-weight:normal; font-size:40px; margin-left: 20px;"> FitLife</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent"
-                style="margin-bottom: 0px; font-size: large; ">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Calculations
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="./index.html">Bodyfat
-                                    percentage</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="./caloriecalculator.html">Calories Calculator</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="./idealweightcalculator.html">Ideal weight Calculator</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Workout
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="MaleWorkoutRoutine.html">Male</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="./FemaleWorkoutRoutine.html">Female</a></li>
-
-                        </ul>
-                    </li>
+          <a class="navbar-brand" href="../introduction.html" style="font-weight:normal; font-size:40px; margin-left: 20px;"> FitLife</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-bottom: 0px; font-size: large; ">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Calculations
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./BodyFatCalculator.html">BodyFat Percentage</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="./CalorieCalculator.html">Calories Calculator</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="./IdealWeightCalculator.html">Ideal weight Calculator</a></li>
                 </ul>
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
-                        <span id="themeDropDown">Change Theme</span>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" id="theme1" href="#" onclick="lightMode()">Light Mode</a></li>
-                        <li><a class="dropdown-item" id="theme2" href="#" onclick="darkMode()">Dark Mode</a></li>
-                    </ul>
-                </div>
-
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Workout
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../WorkoutRoutines/Male.html">Male</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="../WorkoutRoutines/Female.html">Female</a></li>
+    
+                </ul>
+              </li>
+            </ul>
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle themeChangeDropdown" href="#" id="navbarDropdown" 
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span id="themeDropDown">Change Theme</span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item lightMode" href="#" onclick="lightMode()">Light Mode</a></li>
+                <li><a class="dropdown-item darkMode" href="#" onclick="darkMode()">Dark Mode</a></li>
+              </ul>
             </div>
-
+          </div>
         </div>
-    </nav>
-    <br />
+      </nav><br/>
 
-    <div class="container">
+      <div class="container">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
@@ -87,7 +74,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item  active">
-                    <img src="./IMAGES/navbar/idealweight-img1.jpg" style="height: 600px; width: 80%;"
+                    <img src="./IdealCalculatorImages/img1.jpg" style="height: 600px; width: 80%;"
                         class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5> “Don't dig your grave with your own knife and fork.” </h5>
@@ -95,7 +82,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./IMAGES/navbar/idealweight-img2.jpg" style="height: 600px; width: 80%;"
+                    <img src="./IdealCalculatorImages/img2.jpg" style="height: 600px; width: 80%;"
                         class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>“ When you feel like quitting, think about why you started.”</h5>
@@ -103,7 +90,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./IMAGES/navbar/idealweight-img3.jpg" style="height: 600px;"
+                    <img src="./IdealCalculatorImages/img3.jpg" style="height: 600px;"
                         style="height: 800px; width: 80%;" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>“It does not matter how slowly you go, as long as you don't stop”</h5>
@@ -156,15 +143,12 @@
             <div class="form-group" style="display: flex;">
                 <button type="button" data-bs-toggle="popover" title="Popover title"
                     data-bs-content="And here's some amazing content. It's very engaging. Right?"
-                    class="btn btn-lg btn-danger btn-success" style="margin-left: auto;"
+                    class="btn btn-success" style="margin-left: auto;"
                     onclick="calculateidealweight();">Calculate</button>
                 <span style="margin: 10px;"></span>
                 <button class="btn btn-danger" style="margin-right: auto;" onclick="resetidealweightValues();">Reset
                     Values</button>
             </div>
-
-
-
         </div>
         <hr />
         <h2>Result</h2>
@@ -175,19 +159,19 @@
 
         <table id="idealweightresulttable" style="display: none; width: 90%; margin: auto;" class="table">
             <tbody>
+
                 <tr>
-                    <th class="row">
+                    <th>
                         <h4>Method</h4>
                     </th>
                     <th>
                         <h4>Ideal weight</h4>
                     </th>
-
-
+                    <td></td>
                 </tr>
 
                 <tr>
-                    <th class="row">
+                    <th>
                         <h4>Robinson</h4>
                         <h6>(1983)</h6>
                     </th>
@@ -196,7 +180,7 @@
                 </tr>
 
                 <tr>
-                    <th class="row">
+                    <th>
                         <h4>Miller</h4>
                         <h6>(1983)</h6>
                     </th>
@@ -205,7 +189,7 @@
                 </tr>
 
                 <tr>
-                    <th class="row">
+                    <th>
                         <h4>Devine</h4>
                         <h6>(1974)</h6>
                     </th>
@@ -214,18 +198,17 @@
                 </tr>
 
                 <tr>
-                    <th class="row">
+                    <th>
                         <h4>Hamwi</h4>
                         <h6>(1964)</h6>
                     </th>
                     <td class="res" id="Hamwi"></td>
                     <td class="BFformula-table" style="margin-left: 0px">kgs</td>
                 </tr>
-
             </tbody>
         </table>
         <hr />
-
+        <div>
         <h3>How Much Should I Weigh?</h3>
         <p>Most everyone has at some point tried to lose weight, or at least known somebody who has. This is largely due
             to the perception of an "ideal" body weight, which is often based on what we see promoted through various
@@ -386,23 +369,12 @@
             body composition. Our Ideal Weight Calculator is meant to be used as a general guideline based on popular
             formulas, and its results are not intended as strict values that a person must achieve to be considered an
             "ideal weight."</p>
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
-    <script src="./bodyFatCalc.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
+</div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+    <script src="./IdealWeightCalculator.js"></script>
+    <script src="./themes/TcIwc.js"></script>
 </body>
-
 </html>
